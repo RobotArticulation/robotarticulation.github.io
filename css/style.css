@@ -2066,7 +2066,7 @@ Demo Utils
 
 /* Blockquote Box */
 .quote-v1 {
-  background: #7C858E;
+  background: #5888b1;
   padding: 10px 0;
   margin-left: 0;
   margin-right: 0;
@@ -2107,6 +2107,26 @@ Demo Utils
 .quote-v1-sub {
   color: #fff;
   font-size: 16px;
+  font-weight: 300;
+  margin: 13px 5px 8px;
+  line-height: 26px;
+  display: inline-block;
+}
+
+.quote-v2 {
+  background: #5888b1;
+  padding: 10px 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.quote-v2 a {
+  margin: 5px;
+  display: inline-block;
+}
+
+.quote-v2 span {
+  color: #fff;
+  font-size: 22px;
   font-weight: 300;
   margin: 13px 5px 8px;
   line-height: 26px;

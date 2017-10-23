@@ -4,10 +4,11 @@
 
 /* Set displays an element as in inline-level flex container */
 .center-block {
-    position: absolute;
+/*    position: absolute;*/
     top: 0;
     width: 100%;
     height: 100%;
+/*    padding-top: 10%;*/
 }
 
 .center-block-wrap {
@@ -34,6 +35,7 @@
 }
 
 /* Carousel */
+
 .carousel-slider .carousel-indicators li {
     border-radius: 10px !important;
 }
@@ -96,20 +98,27 @@
 }
 
 /* Carousel Item Background Images */
-.carousel-slider .carousel-item-eight {
-    background: url(../img/frontend-slider/bg1_mercury.png);
+.carousel-slider .carousel-item-six {
+    background: url(../img/frontend-slider/bg1_BK.jpg);
     background-size: cover;
     background-position: center center;
 }
 
+.carousel-slider .carousel-item-eight {
+    background: url(../img/frontend-slider/bg1_BK.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
 .carousel-slider .carousel-item-nine {
-    background: url(../../../assets/pages/img/frontend-slider/bg1.jpg);
+    background: url(../img/frontend-slider/bg1_BK.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 .carousel-slider .carousel-item-ten {
-    background: url(../../../assets/pages/img/frontend-slider/bg2.jpg);
+    background: url(../img/frontend-slider/bg1_BK.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -161,7 +170,7 @@
 }
 
 .carousel-slider .carousel-title-v6 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
     line-height: 1.4;
     color: #3f5862;
@@ -221,9 +230,9 @@
 }
 
 .carousel-slider .carousel-subtitle-v7 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
-    color: #7b8793;
+    color: #444;
 }
 
 /* Carousel Btn */
@@ -315,6 +324,7 @@
     position: absolute;
     top: 15%;
     left: auto;
+    max-width: 70%;
 }
 
 .carousel-slider .carousel-position-five {
@@ -327,6 +337,7 @@
     position: absolute;
     top: 25%;
     left: auto;
+/*    padding-top: 20%;*/
 }
 
 /* Carousel Animation Delay */

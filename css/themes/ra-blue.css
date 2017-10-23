@@ -307,11 +307,6 @@ a:hover {
     border-left: 15px solid #83BEE0;
 }
 
-.del-goods:hover,
-.add-goods:hover {
-  background-color: #83BEE0;
-}
-
 .sidebar a:hover > .fa-angle-down {
   background-position: -22px 0;
 }
@@ -344,13 +339,28 @@ a:hover {
   }
 }
 
+.nav-tabs li a:hover
+{
+  background: #d8e6f37d;
+  color: #04182a;
+}
+
 .faq-tabbable {
   border-left: solid 2px #83BEE0;
 }
-.faq-tabbable li:hover a,
-.faq-tabbable li.active a{
-  background: #83BEE0;
+
+.faq-tabbable li:hover a
+{
+  background: #d8e6f37d;
+  color: #04182a;
 }
+
+.faq-tabbable li:hover li.active a,
+.faq-tabbable li.active a{
+  background: #5888b1;
+  color: white
+}
+
 .faq-tabbable li.active:after {
   border-left: 6px solid #83BEE0;
 }

@@ -5,3 +5,138 @@
 .ra-green {
 	color: #3cff15;
 }
+
+.ra-download-link a {
+	color: #027fff;
+}
+
+.ra-content-page {
+	padding: 0 0 20px 20px;
+}
+
+
+.ra_wizard
+{
+	background:none repeat scroll 0 0 #FFFFFF;
+	margin:0 auto;
+	width:100%;
+}
+
+.ra_wizard tr:nth-child(odd)
+{
+	background:#ededed;
+}
+
+.ra_table_head_bg
+{
+	background-color:#5888b1 !important;
+	color:white;
+	padding:5px 5px 0 !important;
+	font-weight:400;
+}
+
+.ra_table_head_bg .ra_table_head
+{
+	font-size:14px;
+	font-weight:400;
+	padding:5px 0;
+	text-align:center;
+}
+
+.ra_table_center
+{
+	text-align:center;
+	font-size: 15px;
+	padding: 10px;
+}
+
+.ra_table_center  td
+{
+	padding: 5px;
+}
+
+.ra-thank-you-text-center
+{
+	text-align: center;
+}
+
+.ra-thank-you-response
+{
+	font-size: 1.5em;
+}
+
+.ra-thank-you-to-home-page
+{
+
+}
+
+.ra-bullet1
+{
+	padding-bottom: 20px;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #4a6784;
+}
+
+.ra-bullet1 img
+{
+	padding-right: 10px;
+	max-width: 32px;
+}
+
+.ra-bullet1 div
+{
+    display: inline-flex;
+	max-width: 80%;
+}
+
+.ra-slider1-text-block
+{
+	padding-top: 15%;
+}
+
+.ra-slider1 img
+{
+	padding-top: 20%;
+    max-width: 60%;
+}
+
+.ra-slider2-text-block
+{
+	padding-top: 10%;
+}
+
+.ra-slider2 img
+{
+	padding-top: 50%;
+    min-width: 150%;
+}
+
+.ra-slider3-text-block
+{
+	padding-top: 15%;
+}
+
+.ra-slider3 img
+{
+	padding-top: 40%;
+	margin-left: 30px;
+    min-width: 100%;
+}
+
+.ra-about-text
+{
+	font-size: 16px;
+}
+
+.sticky-body
+{
+ 	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
+
+.sticky-main
+{
+	flex: 1;
+}
