@@ -6,6 +6,10 @@
 	color: #3cff15;
 }
 
+.ra-download-header {
+	padding-top: 10px;
+}
+
 .ra-download-link a {
 	color: #027fff;
 }
@@ -14,20 +18,110 @@
 	padding: 0 0 20px 20px;
 }
 
+.ra-header-img {
+	max-width: 100%;
+}
 
-.ra_wizard
+.ra-site-logo-wrapper {
+	padding-left: 0px;
+}
+
+h2.ra-specification_header {
+	padding-top: 30px;
+}
+
+.ra-primary-btn {
+    background: #007bff;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+}
+
+a.ra-primary-btn {
+	text-decoration: none;
+	color: white;
+}
+
+.ra-list-container {
+    width: auto; /*can be in percentage also.*/
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.blue_bg {
+    background: #006aae !important;
+    color: white;
+    padding: 5px 5px 0 !important;
+    font-weight: 400;
+}
+
+.blue_bg .header {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    background: 
+}
+
+.mercury-image-content-filler {
+	padding: 0px 0 100px 0;
+	overflow: hidden;
+}
+
+.mercury-image-content h1 {
+	font-size: 34px;
+	font-weight: 400;
+	color: #262626;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin: 0 0 20px 0;
+}
+
+.mercury-image-content p {
+	font-family: Poppins;
+	font-size: 16px;
+	color: #5b5858;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 25px 0;
+}
+
+.ra-wizard
 {
 	background:none repeat scroll 0 0 #FFFFFF;
 	margin:0 auto;
 	width:100%;
+    text-align: center;
 }
 
-.ra_wizard tr:nth-child(odd)
+.ra-wizard tr:nth-child(odd)
 {
 	background:#ededed;
 }
 
-.ra_table_head_bg
+.ra-font h1 {
+	font-size: 28px;
+}
+
+.ra-font h2 {
+	font-size: 24px;
+}
+
+.ra-table-head-bg
 {
 	background-color:#5888b1 !important;
 	color:white;
@@ -35,7 +129,7 @@
 	font-weight:400;
 }
 
-.ra_table_head_bg .ra_table_head
+.ra-table-head-bg .ra-table-head
 {
 	font-size:14px;
 	font-weight:400;
@@ -43,16 +137,9 @@
 	text-align:center;
 }
 
-.ra_table_center
+.ra-table-center
 {
-	text-align:center;
 	font-size: 15px;
-	padding: 10px;
-}
-
-.ra_table_center  td
-{
-	padding: 5px;
 }
 
 .ra-thank-you-text-center
@@ -126,7 +213,16 @@
 
 .ra-about-text
 {
+	font-family: Poppins;
 	font-size: 16px;
+    color: #5b5858;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ra-link a
+{
+	color: #1184d4;
 }
 
 .sticky-body

@@ -456,9 +456,14 @@ body.page-header-fixed {
   font-weight: 400;
 
   margin-right: 67px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
+
+/*.header .col-xs-2 .mobi-toggler {
+  margin-top: 33.33%;
+  margin-bottom: 33.33%;
+}*/
 
 .header .mobi-toggler {
   float: right;
@@ -469,9 +474,12 @@ body.page-header-fixed {
   height: 32px;
   display: none;
   margin: 25px 0 0 30px;
+/*  margin-top: 33.33%;
+  margin-bottom: 33.33%;*/
   position: relative;
   background: #fff url(../img/icons/toggler.png) no-repeat 6px 8px;
 }
+
 .header .mobi-toggler i {
   display: none;
 }
@@ -491,7 +499,7 @@ body.page-header-fixed {
 }
 .header-navigation ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 15px;
 	list-style: none;
 }
 .header-navigation > ul > li {
@@ -1438,9 +1446,10 @@ Pre-Footer and pre-footer elements
 .pre-footer {
 	background: #313030;
 	color: #b0b0b0;
+    text-align: center;
 }
 .pre-footer .container {
-	padding-top: 45px;
+	padding-top: 35px;
 }
 .pre-footer a {
 	color: #57c8eb;
