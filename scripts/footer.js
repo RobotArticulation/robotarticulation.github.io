@@ -62,8 +62,8 @@ $("div.page_footer").html(" \
         <!-- END COPYRIGHT --> \
         <!-- BEGIN PAYMENTS --> \
         <div class='col-md-4 col-sm-4'> \
-          <ul class='social-footer list-unstyled list-inline pull-right> \
-            <li><a href='https://www.linkedin.com/company/11211588' target='_blank'><i class='fa fa-linkedin'></i></a></li> \
+          <ul class='social-footer list-unstyled list-inline pull-right'> \
+            <li><a href='https://linkedin.com/company/robot-articulation' target='_blank'><i class='fa fa-linkedin'></i></a></li> \
             <li><a href='https://github.com/RobotArticulation' target='_blank'><i class='fa fa-github'></i></a></li> \
           </ul>  \
         </div> \
