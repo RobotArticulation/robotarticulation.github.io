@@ -225,6 +225,13 @@ a.ra-primary-btn {
 	color: #1184d4;
 }
 
+a.ra-disabled 
+{
+  color: grey;
+  pointer-events: none;
+  cursor: default;
+}
+
 .sticky-body
 {
  	display: flex;
