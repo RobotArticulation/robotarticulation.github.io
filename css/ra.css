@@ -100,6 +100,11 @@ a.ra-primary-btn {
 	margin: 0 0 25px 0;
 }
 
+.usb2mercury-image-content {
+	margin: auto;
+	padding-bottom: 20px;
+}
+
 .ra-wizard
 {
 	background:none repeat scroll 0 0 #FFFFFF;

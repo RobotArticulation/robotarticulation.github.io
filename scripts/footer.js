@@ -32,7 +32,7 @@ $("div.page_footer").html(" \
             <p><a href='" + path + "/product_mercury_m30.html'>Mercury M30</a></p> \
             <p><a href='" + path + "/product_mercury_m50.html'>Mercury M50</a></p> \
             <p><a href='" + path + "/product_mercury_m65.html'>Mercury M65</a></p> \
-            <p><a href='" + path + "/product_mercury_link.html'>Mercury Link</a></p> \
+            <p><a href='" + path + "/product_usb2mercury.html'>USB2Mercury</a></p> \
             <p><a href='" + path + "/product_mercury_power_hub.html'>Mercury Power Hub</a></p> \
             <p><a href='" + path + "/product_key_features.html'>Key Features</a></p> \
         </div> \
@@ -58,7 +58,7 @@ $("div.page_footer").html(" \
       <div class='row'> \
         <!-- BEGIN COPYRIGHT --> \
         <div class='col-md-4 col-sm-4 padding-top-10'> \
-          2017 © Robot Articulation. ALL Rights Reserved. \
+          2020 © Robot Articulation. ALL Rights Reserved. \
         </div> \
         <!-- END COPYRIGHT --> \
         <!-- BEGIN PAYMENTS --> \

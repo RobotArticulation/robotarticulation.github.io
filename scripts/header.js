@@ -28,7 +28,7 @@ $("div.page_header").html(" \
                 <li><a href='" + path + "/product_mercury_m30.html'>Mercury M30</a></li> \
                 <li><a href='" + path + "/product_mercury_m50.html'>Mercury M50</a></li> \
                 <li><a href='" + path + "/product_mercury_m65.html'>Mercury M65</a></li> \
-                <li><a href='" + path + "/product_mercury_link.html'>Mercury Link</a></li> \
+                <li><a href='" + path + "/product_usb2mercury.html'>USB2Mercury</a></li> \
                 <li><a href='" + path + "/product_mercury_power_hub.html'>Mercury Power Hub</a></li> \
                 <li><a href='" + path + "/product_key_features.html'>Key Features</a></li> \
               </ul> \
