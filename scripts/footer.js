@@ -65,6 +65,7 @@ $("div.page_footer").html(" \
         <div class='col-md-4 col-sm-4'> \
           <ul class='social-footer list-unstyled list-inline pull-right'> \
             <li><a href='https://linkedin.com/company/robot-articulation' target='_blank'><i class='fa fa-linkedin'></i></a></li> \
+            <li><a href='https://www.facebook.com/Robot-Articulation-840592286096400' target='_blank'><i class='fa fa-facebook'></i></a></li> \
             <li><a href='https://github.com/RobotArticulation' target='_blank'><i class='fa fa-github'></i></a></li> \
           </ul>  \
         </div> \
