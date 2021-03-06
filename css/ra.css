@@ -78,8 +78,22 @@ a.ra-primary-btn {
 }
 
 .mercury-image-content-filler {
-	padding: 0px 0 100px 0;
+	padding: 0px 0 80px 0;
 	overflow: hidden;
+}
+
+.mercury-image-content-filler-2 {
+	padding: 0px 0 20px 0;
+	overflow: hidden;
+}
+
+.mercury-image-content-filler-3 {
+	padding: 10px 0 30px 0;
+	overflow: hidden;
+}
+
+.mercury-filler-1 {
+	padding: 100px 0px 0px 0;
 }
 
 .mercury-image-content h1 {
