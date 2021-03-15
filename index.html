@@ -24,7 +24,7 @@
     <link rel="icon" type="image/x-icon" href="img/icons/robotarticulation-logo.png">
 
     <!-- Fonts START -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
     <!-- Fonts END -->
 
@@ -48,11 +48,21 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/ra.css" rel="stylesheet">
     <!-- Theme styles END -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
   </head>
   <!-- Head END -->
 
   <!-- Body BEGIN -->
   <body class="corporate sticky-body ra-font">
+
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <div class="ra-alert-content">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Our Early Adopter program is now active! For more details,  <a href="pages/early_adopter_program.html" class="alert-link">please click here</a>.
+      </div>
+    </div>
 
   <div class="page_header"></div>
 
@@ -157,14 +167,41 @@
     <script src="plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
     <script src="scripts/layout.js" type="text/javascript"></script>
     <script src="./scripts/bs-carousel.js" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="scripts/cookies.js" type="text/javascript"></script>
+
     <script type="text/javascript">
 
       jQuery(document).ready(function() {
         Layout.init();    
         Layout.initOWL();
         Layout.initTwitter();
+
+        if (cookieExists("cookieconsent_status")) {
+          if (getCookie("cookieconsent_status") == "allow") { // cookies are allowed
+            if (cookieExists("alert_status") && getCookie("alert_status") == "close") {
+              $(".alert").hide();
+            }
+          }
+          else { // deny
+            if (cookieExists("alert_status")) {
+              removeCookie("alert_status");
+            }
+          }
+        }
       });
 
+      $('.alert .close').click(function(e) {
+        e.preventDefault();
+        $(this).closest('.alert').slideUp();
+        if (cookieExists("cookieconsent_status") && getCookie("cookieconsent_status") == "allow") {
+          setCookie(3,"alert_status");
+        }
+      });
+
+      cookieConsent();
       pageHeader("pages", ".", "home");
       pageFooter("pages");
 

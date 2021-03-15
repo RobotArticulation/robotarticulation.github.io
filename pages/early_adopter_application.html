@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+  <meta charset="utf-8">
+  <title>Robot Articulation</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta property="og:site_name" content="-CUSTOMER VALUE-">
+  <meta property="og:title" content="-CUSTOMER VALUE-">
+  <meta property="og:description" content="-CUSTOMER VALUE-">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+  <meta property="og:url" content="-CUSTOMER VALUE-">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="../img/icons/robotarticulation-logo.png">
+
+  <!-- Fonts START -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <!-- Fonts END -->
+
+  <!-- Global styles START -->          
+  <link href="../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Global styles END --> 
+
+  <!-- Page level plugin styles START -->
+  <link href="../plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/style-responsive.css" rel="stylesheet">
+  <link href="../css/themes/ra-blue.css" rel="stylesheet" id="style-color">
+  <link href="../css/custom.css" rel="stylesheet">
+  <link href="../css/ra.css" rel="stylesheet">
+  <!-- Theme styles END -->
+
+  <link href="https://bootstrapformhelpers.com/assets/css/bootstrap-formhelpers.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate sticky-body ra-font">
+
+  <div class="page_header"></div>
+
+  <div class="main sticky-main">
+    <div class="container">
+      <ul class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active">Early Adopter Application</li>
+      </ul>
+      <div class="row margin-bottom-40">
+        <!-- BEGIN CONTENT -->
+        <div class="col-md-12">
+          <h1>Early Adopter Application (EAP)</h1>
+          <div class="content-page">
+            <div class="row">
+
+              <div class="col-md-9 col-sm-9">
+                <h2>EAP Application Form</h2>
+                
+                <!-- BEGIN FORM-->
+                <form name="eapform" method="post" action="https://formspree.io/f/mnqoedwy">
+                  <div class="form-group">
+                    <label for="eap-name">Full name*</label>
+                    <input type="text" name="name" class="form-control" id="eap-name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="eap-email">Email*</label>
+                    <input type="email" name="_replyto" class="form-control" id="eap-email" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-company">Company name*</label>
+                    <input type="company" name="company" class="form-control" id="eap-company" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-address">Company address*</label>
+                    <input type="address" name="address" class="form-control" id="eap-address" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-company">City*</label>
+                    <input type="city" name="city" class="form-control" id="eap-city" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-country">Country*</label>
+                    <select id="country-select" name="country-select" class="bfh-countries form-control" data-country="" data-flags="true" required></select>
+                  </div> 
+
+                  <div class="form-group">
+                    <label for="eap-postcode">ZIP / Post Code*</label>
+                    <input type="postcode" name="postcode" class="form-control" id="eap-postcode" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-phone">Phone</label>
+                    <input type="phone" name="phone" class="form-control" id="eap-phone">
+                  </div>
+
+                  <!-- --------------------------- -->
+                  <div class="form-group">
+                    <label for="eap-project-about">Give a brief description of your project*</label>
+                    <textarea class="form-control" name="message" rows="5" id="eap-project-about" required></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-project-timeline">What is the timeline of your project?*</label>
+                    <input type="project-timeline" name="project-timeline" class="form-control" id="eap-project-timeline" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-project-feedback">Are you willing to engage with us by offering regular feedback and input?*</label>
+                    <div class="ra-eap-radio-group">
+                      <ul id="eap-project-feedback">
+                        <li>
+                          <input name="project-feedback" type="radio" value="Yes" id="eap-project-feedback-agree" required>
+                          <label for="eap-project-feedback-agree">Yes</label>
+                        </li>
+                        <li>
+                          <input name="project-feedback" type="radio" value="No" id="eap-project-feedback-disagree">
+                          <label for="eap-project-feedback-disagree">No</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="eap-project-marketing">Are you willing to provide us with quotes and case study material for marketing pruposes?*</label>
+                    <div class="ra-eap-radio-group">
+                      <ul id="eap-project-marketing">
+                        <li>
+                          <input name="project-marketing" type="radio" value="Yes" id="eap-project-marketing-agree" required>
+                          <label for="eap-project-marketing-agree">Yes</label>
+                        </li>
+                        <li>
+                          <input name="project-marketing" type="radio" value="No" id="eap-project-marketing-disagree">
+                          <label for="eap-project-marketing-disagree">No</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="form-group ra-eap-form">
+                    <label for="eap-project-agreement">Be willing to sign the
+                      <a href="../downloads/eap/eap_agreement.pdf" target="_blank" rel="noopener noreferrer">EAP agreement</a>?*
+                    </label>
+                    <div class="ra-eap-radio-group">
+                      <ul id="eap-project-agreement">
+                        <li>
+                          <input name="project-agreement" type="radio" value="Yes" id="eap-project-agreement-agree" required>
+                          <label for="eap-project-agreement-agree">Yes</label>
+                        </li>
+                        <li>
+                          <input name="project-agreement" type="radio" value="No" id="eap-project-agreement-disagree">
+                          <label for="eap-project-agreement-disagree">No</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <input type="hidden" name="_next" value="./thanks.html" />
+                  <input type="hidden" name="_subject" value="EAP application requested from robotarticulation.com" />
+
+                  <button type="submit" class="btn btn-primary"><i class="icon-ok"></i> Send</button>
+                </form>
+                <!-- END FORM-->
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+        <!-- END CONTENT -->
+    </div>
+  </div>
+
+  <div class="page_footer"></div>
+
+  <!-- Load javascripts at bottom, this will reduce page load time -->
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>
+  <![endif]--> 
+
+  <script src="../plugins/jquery.min.js" type="text/javascript"></script>
+  <script src="../plugins/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+  <script src="../scripts/back-to-top.js" type="text/javascript"></script>
+  <script src="../scripts/header.js" type="text/javascript"></script>
+  <script src="../scripts/footer.js" type="text/javascript"></script>
+  <!-- END CORE PLUGINS -->
+
+  <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+  <script src="../plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+  <script src="../plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+  <script src="../scripts/layout.js" type="text/javascript"></script>
+  <script src="../scripts/bs-carousel.js" type="text/javascript"></script>
+
+  <script src="https://bootstrapformhelpers.com/assets/js/bootstrap-formhelpers.min.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script src="../scripts/cookies.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      Layout.init();    
+      Layout.initTwitter();
+    });
+
+    function setCountry(cc) {
+      $('#country-select').val(cc);
+    }   
+
+    cookieConsent();
+    pageHeader(".", "..", "support");
+    pageFooter(".");
+  </script>
+  <!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

@@ -22,6 +22,8 @@ $("div.page_footer").html(" \
           <h2>About</h2> \
           <p><a href='" + path + "/about.html'>About Us</a></p> \
           <p><a href='" + path + "/contacts.html'>Contact Us</a></p> \
+          <p><a href='" + path + "/early_adopter_program.html'>Early Adopter Program</a></p> \
+          <p><a href='" + path + "/early_adopter_application.html'>Early Adopter Application</a></p> \
           <p><a href='" + path + "/../downloads/legal/legal-notice.pdf' target='_blank'>Legal Notice</a></p> \
         </div> \
         <!-- END BOTTOM ABOUT BLOCK --> \

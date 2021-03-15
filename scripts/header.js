@@ -47,6 +47,18 @@ $("div.page_header").html(" \
 \
             </li> \
 \
+            <li id='support' class='dropdown'> \
+              <a class='dropdown-toggle' data-toggle='dropdown' data-target='#' href='javascript:;'> \
+                Support \
+              </a> \
+\
+              <ul class='dropdown-menu'> \
+                <li><a href='" + path + "/early_adopter_program.html'>Early adopter program</a></li> \
+                <li><a href='" + path + "/early_adopter_application.html'>Early adopter application</a></li> \
+              </ul> \
+\
+            </li> \
+\
             <li id='about'> \
               <a href='" + path + "/about.html'>About us</a> \
             </li> \
