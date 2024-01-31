@@ -1,0 +1,336 @@
+.ra-blue {
+	color: #1184d4;
+}
+
+.ra-green {
+	color: #3cff15;
+}
+
+.ra-download-header {
+	padding-top: 10px;
+}
+
+.ra-download-link a {
+	color: #027fff;
+}
+
+.ra-content-page {
+	padding: 0 0 20px 20px;
+}
+
+.ra-header-img {
+	max-width: 100%;
+}
+
+.ra-site-logo-wrapper {
+	padding-left: 0px;
+}
+
+h2.ra-specification_header {
+	padding-top: 30px;
+}
+
+.ra-primary-btn {
+    background: #007bff;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+}
+
+a.ra-primary-btn {
+	text-decoration: none;
+	color: white;
+}
+
+.ra-list-container {
+    width: auto; /*can be in percentage also.*/
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.blue_bg {
+    background: #006aae !important;
+    color: white;
+    padding: 5px 5px 0 !important;
+    font-weight: 400;
+}
+
+.blue_bg .header {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    background: 
+}
+
+.mercury-image-content-filler {
+	padding: 0px 0 80px 0;
+	overflow: hidden;
+}
+
+.mercury-image-content-filler-2 {
+	padding: 0px 0 20px 0;
+	overflow: hidden;
+}
+
+.mercury-image-content-filler-3 {
+	padding: 10px 0 30px 0;
+	overflow: hidden;
+}
+
+.mercury-filler-1 {
+	padding: 100px 0px 0px 0;
+}
+
+.mercury-image-content h1 {
+	font-size: 34px;
+	font-weight: 400;
+	color: #262626;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin: 0 0 20px 0;
+}
+
+.mercury-image-content p {
+	font-family: Poppins;
+	font-size: 16px;
+	color: #5b5858;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 25px 0;
+}
+
+.usb2mercury-image-content {
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.usb2mercury-product-prices .usb2mercury-current-price {
+    color: #0079ff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.ra-product-prices .ra-current-price {
+    color: #0079ff;
+    font-size: 22px;
+    font-weight: 700;
+	padding-left: 0px;
+    /* padding: 0px 0; */
+    display: inline-block;
+}
+
+.ra-wizard
+{
+	background:none repeat scroll 0 0 #FFFFFF;
+	margin:0 auto;
+	width:100%;
+    text-align: center;
+}
+
+.ra-wizard tr:nth-child(odd)
+{
+	background:#ededed;
+}
+
+.ra-font h1 {
+	font-size: 28px;
+}
+
+.ra-font h2 {
+	font-size: 24px;
+}
+
+.ra-table-head-bg
+{
+	background-color:#2c6aa0 !important;
+	color:white;
+	padding:5px 5px 0 !important;
+	font-weight:400;
+}
+
+.ra-table-head-bg .ra-table-head
+{
+	font-size:14px;
+	font-weight:400;
+	padding:5px 0;
+	text-align:center;
+}
+
+.ra-table-center
+{
+	font-size: 15px;
+}
+
+.ra-thank-you-text-center
+{
+	text-align: center;
+}
+
+.ra-thank-you-response
+{
+	font-size: 1.5em;
+}
+
+/* .ra-thank-you-to-home-page
+{
+
+} */
+
+.ra-alert-content
+{
+	font-size:16px;
+    /* height:32px;
+    width:32px;
+    line-height: 32px; */
+	text-align: center;
+}
+
+.ra-bullet1
+{
+	padding-bottom: 20px;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #4a6784;
+}
+
+.ra-bullet1 img
+{
+	padding-right: 10px;
+	max-width: 32px;
+}
+
+.ra-bullet1 div
+{
+    display: inline-flex;
+	max-width: 80%;
+}
+
+.ra-slider1-text-block
+{
+	padding-top: 15%;
+}
+
+.ra-slider1 img
+{
+	padding-top: 20%;
+    max-width: 60%;
+}
+
+.ra-slider2-text-block
+{
+	padding-top: 10%;
+}
+
+.ra-slider2 img
+{
+	padding-top: 50%;
+    min-width: 150%;
+}
+
+.ra-slider3-text-block
+{
+	padding-top: 15%;
+}
+
+.ra-slider3 img
+{
+	padding-top: 40%;
+	margin-left: 30px;
+    min-width: 100%;
+}
+
+.ra-about-text
+{
+	font-family: Poppins;
+	font-size: 16px;
+    color: #5b5858;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ra-eap-header-text
+{
+	font-family: Poppins;
+	font-size: 16px;
+    color: #5b5858;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ra-eap-body-text 
+{
+	font-family: Poppins;
+	font-size: 16px;
+    color: #5b5858;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ra-eap-list
+{
+	padding-top: 20px;
+}
+
+.ra-eap-body-text ul li a
+{
+	color: #1166BB;
+}
+
+.ra-eap-radio-group ul li {
+	display: block;
+}
+
+.ra-eap-form a {
+	color: #1166BB;
+}
+
+.ra-link a
+{
+	color: #1184d4;
+}
+
+/* .ra-usb2mercury-table
+{
+	margin: 0 0 0 0px;
+}
+
+.ra-usb2mercury-table-row h1
+{
+	margin: 0 0 0 0px;
+} */
+
+a.ra-disabled 
+{
+  color: grey;
+  pointer-events: none;
+  cursor: default;
+}
+
+.sticky-body
+{
+ 	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
+
+.sticky-main
+{
+	flex: 1;
+}

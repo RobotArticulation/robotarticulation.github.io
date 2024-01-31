@@ -1,0 +1,38 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysection{Mercury\+SDK}\label{md__r_e_a_d_m_e_autotoc_md0}
+This is the repository for the software development kit (SDK) for the Mercury range of digital servos
+
+Please note that this SDK is based on the Dynamixel SDK. Please see the copyright notices in the source file headers.
+
+\doxysubsubsection*{\uline{Installation}}
+
+Clone the \href{https://github.com/RobotArticulation/MercurySDK}{\texttt{ Mercury\+SDK}}\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsubsection{Build and install the Mercury\+SDK\+:}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxyparagraph{Linux (x64)}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item cd Mercury\+SDK/c++/build/linux64
+\item make
+\item sudo make install
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxyparagraph{Windows (x64)}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item in Visual Studio, open the solution file Mercury\+SDK/c++/build/win64/mcy\+\_\+x64\+\_\+cpp.sln
+\item build-\/all in the release configuration.
+\end{DoxyItemize}
+
+\doxysubsubsection*{\uline{Running the examples}}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{Building and running the ping example\+:}\label{md__r_e_a_d_m_e_autotoc_md4}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxyparagraph{Linux (x64)}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item cd Mercury\+SDK/c++/example/ping/linux64
+\item ensure that the USB device name in \mbox{\hyperlink{ping_8cpp}{ping.\+cpp}} correctly identifies the USB2\+Mercury device\textquotesingle{}s USB port
+\item make
+\item ./ping
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxyparagraph{Windows (x64)}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item in Visual Studio, open the solution file Mercury\+SDK/c++/example/ping/win64/ping.sln
+\item ensure that the USB device name in \mbox{\hyperlink{ping_8cpp}{ping.\+cpp}} correctly identifies the USB2\+Mercury device\textquotesingle{}s USB port
+\item build-\/all in the release configuration.
+\item ensure that mcy\+\_\+x64\+\_\+cpp.\+dll is in the PATH
+\item run ping.\+exe 
+\end{DoxyItemize}

@@ -1,0 +1,391 @@
+\hypertarget{classmercury_1_1_group_sync_read}{}\doxysection{mercury\+::Group\+Sync\+Read Class Reference}
+\label{classmercury_1_1_group_sync_read}\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+
+
+The class for reading multiple Dynamixel data from same address with same length at once.  
+
+
+
+
+{\ttfamily \#include $<$group\+\_\+sync\+\_\+read.\+h$>$}
+
+Inheritance diagram for mercury\+::Group\+Sync\+Read\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmercury_1_1_group_sync_read}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmercury_1_1_group_sync_read_acfd4c2395758899beea950df875f2392}{Group\+Sync\+Read}} (\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$port, \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$ph, uint16\+\_\+t start\+\_\+address, uint16\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em The function that Initializes instance for Sync Read. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmercury_1_1_group_sync_read_af4336e4edfd6b9291709cb60a5a0d321}{$\sim$\+Group\+Sync\+Read}} ()
+\begin{DoxyCompactList}\small\item\em The function that calls clear\+Param function to clear the parameter list for Sync Read. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_read_a1dc836b4febd8d81838ec855eefbcd6c}{add\+Param}} (uint8\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em The function that adds id, start\+\_\+address, data\+\_\+length to the Sync Read list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmercury_1_1_group_sync_read_afef475b1de2ba0a90a248ea17e101886}{remove\+Param}} (uint8\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em The function that removes id from the Sync Read list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmercury_1_1_group_sync_read_ad3a349c72411ae23889ef2d051fb4133}{clear\+Param}} ()
+\begin{DoxyCompactList}\small\item\em The function that clears the Sync Read list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmercury_1_1_group_sync_read_a5cb800eb577078504a83b391d2501861}{tx\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em The function that transmits the Sync Read instruction packet which might be constructed by \mbox{\hyperlink{classmercury_1_1_group_sync_read_a1dc836b4febd8d81838ec855eefbcd6c}{Group\+Sync\+Read\+::add\+Param}} function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{rx\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em The function that receives the packet which might be come from the Dynamixel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{tx\+Rx\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em The function that transmits and receives the packet which might be come from the Dynamixel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_read_a7ed0a2654a82a1828f59b4d62107edf0}{is\+Available}} (uint8\+\_\+t id, uint16\+\_\+t address, uint16\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em The function that checks whether there are available data which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classmercury_1_1_group_sync_read_a97c5993c214c3fb1ad575b28d1b58cc3}{get\+Data}} (uint8\+\_\+t id, uint16\+\_\+t address, uint16\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em The function that gets the data which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_read_a7b1014ed1d0bcae44f31b0421ee7b2d1}{get\+Error}} (uint8\+\_\+t id, uint8\+\_\+t $\ast$error)
+\begin{DoxyCompactList}\small\item\em The function that gets the error which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmercury_1_1_group_sync_read_a4be51088808dfef6d63e20b449fc3465}{make\+Param}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ uint8\+\_\+t, uint8\+\_\+t $\ast$ $>$ \mbox{\hyperlink{classmercury_1_1_group_sync_read_a13e48ea2f00d22164be5e641016e1f7d}{error\+\_\+list\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_read_a9e2524c553eecb519bf28c506e99cb64}{last\+\_\+result\+\_\+}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classmercury_1_1_group_sync_read_aaba54ad05876843947351c03b2f8ab96}{start\+\_\+address\+\_\+}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classmercury_1_1_group_sync_read_aef3cf33f7f502d19411c16b6b0b40d03}{data\+\_\+length\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class for reading multiple Dynamixel data from same address with same length at once. 
+
+Definition at line 36 of file group\+\_\+sync\+\_\+read.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_acfd4c2395758899beea950df875f2392}\label{classmercury_1_1_group_sync_read_acfd4c2395758899beea950df875f2392}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!GroupSyncRead@{GroupSyncRead}}
+\index{GroupSyncRead@{GroupSyncRead}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{GroupSyncRead()}{GroupSyncRead()}}
+{\footnotesize\ttfamily Group\+Sync\+Read\+::\+Group\+Sync\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$}]{port,  }\item[{\mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$}]{ph,  }\item[{uint16\+\_\+t}]{start\+\_\+address,  }\item[{uint16\+\_\+t}]{data\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+The function that Initializes instance for Sync Read. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} instance \\
+\hline
+{\em ph} & \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} instance \\
+\hline
+{\em start\+\_\+address} & Address of the data for read \\
+\hline
+{\em data\+\_\+length} & Length of the data for read \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_af4336e4edfd6b9291709cb60a5a0d321}\label{classmercury_1_1_group_sync_read_af4336e4edfd6b9291709cb60a5a0d321}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!````~GroupSyncRead@{$\sim$GroupSyncRead}}
+\index{````~GroupSyncRead@{$\sim$GroupSyncRead}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{$\sim$GroupSyncRead()}{~GroupSyncRead()}}
+{\footnotesize\ttfamily mercury\+::\+Group\+Sync\+Read\+::$\sim$\+Group\+Sync\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The function that calls clear\+Param function to clear the parameter list for Sync Read. 
+
+
+
+Definition at line 61 of file group\+\_\+sync\+\_\+read.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a1dc836b4febd8d81838ec855eefbcd6c}\label{classmercury_1_1_group_sync_read_a1dc836b4febd8d81838ec855eefbcd6c}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!addParam@{addParam}}
+\index{addParam@{addParam}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{addParam()}{addParam()}}
+{\footnotesize\ttfamily bool Group\+Sync\+Read\+::add\+Param (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+The function that adds id, start\+\_\+address, data\+\_\+length to the Sync Read list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+
+when the ID exists already in the list 
+
+when the protocol1.\+0 has been used 
+
+or true 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_ad3a349c72411ae23889ef2d051fb4133}\label{classmercury_1_1_group_sync_read_ad3a349c72411ae23889ef2d051fb4133}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!clearParam@{clearParam}}
+\index{clearParam@{clearParam}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{clearParam()}{clearParam()}}
+{\footnotesize\ttfamily void Group\+Sync\+Read\+::clear\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that clears the Sync Read list. 
+
+
+
+Definition at line 91 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a97c5993c214c3fb1ad575b28d1b58cc3}\label{classmercury_1_1_group_sync_read_a97c5993c214c3fb1ad575b28d1b58cc3}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!getData@{getData}}
+\index{getData@{getData}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily uint32\+\_\+t Group\+Sync\+Read\+::get\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{uint16\+\_\+t}]{address,  }\item[{uint16\+\_\+t}]{data\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+The function that gets the data which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+{\em address} & Address of the data for read @data\+\_\+length Length of the data for read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data value 
+\end{DoxyReturn}
+
+
+Definition at line 174 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a7b1014ed1d0bcae44f31b0421ee7b2d1}\label{classmercury_1_1_group_sync_read_a7b1014ed1d0bcae44f31b0421ee7b2d1}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!getError@{getError}}
+\index{getError@{getError}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily bool Group\+Sync\+Read\+::get\+Error (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{uint8\+\_\+t $\ast$}]{error }\end{DoxyParamCaption})}
+
+
+
+The function that gets the error which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID @error error of Dynamixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+when Dynamixel returned specific error byte 
+
+or false 
+\end{DoxyReturn}
+
+
+Definition at line 196 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a7ed0a2654a82a1828f59b4d62107edf0}\label{classmercury_1_1_group_sync_read_a7ed0a2654a82a1828f59b4d62107edf0}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool Group\+Sync\+Read\+::is\+Available (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{uint16\+\_\+t}]{address,  }\item[{uint16\+\_\+t}]{data\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+The function that checks whether there are available data which might be received by \mbox{\hyperlink{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}{Group\+Sync\+Read\+::rx\+Packet}} or \mbox{\hyperlink{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}{Group\+Sync\+Read\+::tx\+Rx\+Packet}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+{\em address} & Address of the data for read \\
+\hline
+{\em data\+\_\+length} & Length of the data for read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+
+when there are no data available 
+
+when the protocol1.\+0 has been used 
+
+or true 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a4be51088808dfef6d63e20b449fc3465}\label{classmercury_1_1_group_sync_read_a4be51088808dfef6d63e20b449fc3465}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!makeParam@{makeParam}}
+\index{makeParam@{makeParam}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{makeParam()}{makeParam()}}
+{\footnotesize\ttfamily void Group\+Sync\+Read\+::make\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_afef475b1de2ba0a90a248ea17e101886}\label{classmercury_1_1_group_sync_read_afef475b1de2ba0a90a248ea17e101886}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!removeParam@{removeParam}}
+\index{removeParam@{removeParam}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{removeParam()}{removeParam()}}
+{\footnotesize\ttfamily void Group\+Sync\+Read\+::remove\+Param (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+The function that removes id from the Sync Read list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}\label{classmercury_1_1_group_sync_read_ae01d76f7b9565539c68300de9bfb152d}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!rxPacket@{rxPacket}}
+\index{rxPacket@{rxPacket}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{rxPacket()}{rxPacket()}}
+{\footnotesize\ttfamily int Group\+Sync\+Read\+::rx\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that receives the packet which might be come from the Dynamixel. 
+
+\begin{DoxyReturn}{Returns}
+COMM\+\_\+\+NOT\+\_\+\+AVAILABLE 
+
+when the list for Sync Read is empty 
+
+when the protocol1.\+0 has been used 
+
+COMM\+\_\+\+SUCCESS 
+
+when there is packet recieved 
+
+or the other communication results 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a5cb800eb577078504a83b391d2501861}\label{classmercury_1_1_group_sync_read_a5cb800eb577078504a83b391d2501861}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!txPacket@{txPacket}}
+\index{txPacket@{txPacket}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{txPacket()}{txPacket()}}
+{\footnotesize\ttfamily int Group\+Sync\+Read\+::tx\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that transmits the Sync Read instruction packet which might be constructed by \mbox{\hyperlink{classmercury_1_1_group_sync_read_a1dc836b4febd8d81838ec855eefbcd6c}{Group\+Sync\+Read\+::add\+Param}} function. 
+
+\begin{DoxyReturn}{Returns}
+COMM\+\_\+\+NOT\+\_\+\+AVAILABLE 
+
+when the list for Sync Read is empty 
+
+when the protocol1.\+0 has been used 
+
+or the other communication results which come from \mbox{\hyperlink{classmercury_1_1_packet_handler_af51ee95bfc3f386235e746b1418d5d38}{Packet\+Handler\+::sync\+Read\+Tx}} 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}\label{classmercury_1_1_group_sync_read_a613d3b936b0844980fcada6f91f2ce96}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!txRxPacket@{txRxPacket}}
+\index{txRxPacket@{txRxPacket}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{txRxPacket()}{txRxPacket()}}
+{\footnotesize\ttfamily int Group\+Sync\+Read\+::tx\+Rx\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that transmits and receives the packet which might be come from the Dynamixel. 
+
+\begin{DoxyReturn}{Returns}
+COMM\+\_\+\+NOT\+\_\+\+AVAILABLE 
+
+when the protocol1.\+0 has been used 
+
+COMM\+\_\+\+RX\+\_\+\+FAIL 
+
+when there is no packet recieved 
+
+COMM\+\_\+\+SUCCESS 
+
+when there is packet recieved 
+
+or the other communication results which come from Group\+Bulk\+Read\+::tx\+Packet or Group\+Bulk\+Read\+::rx\+Packet 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file group\+\_\+sync\+\_\+read.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_aef3cf33f7f502d19411c16b6b0b40d03}\label{classmercury_1_1_group_sync_read_aef3cf33f7f502d19411c16b6b0b40d03}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!data\_length\_@{data\_length\_}}
+\index{data\_length\_@{data\_length\_}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{data\_length\_}{data\_length\_}}
+{\footnotesize\ttfamily uint16\+\_\+t mercury\+::\+Group\+Sync\+Read\+::data\+\_\+length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file group\+\_\+sync\+\_\+read.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a13e48ea2f00d22164be5e641016e1f7d}\label{classmercury_1_1_group_sync_read_a13e48ea2f00d22164be5e641016e1f7d}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!error\_list\_@{error\_list\_}}
+\index{error\_list\_@{error\_list\_}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{error\_list\_}{error\_list\_}}
+{\footnotesize\ttfamily std\+::map$<$uint8\+\_\+t, uint8\+\_\+t $\ast$$>$ mercury\+::\+Group\+Sync\+Read\+::error\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 39 of file group\+\_\+sync\+\_\+read.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_a9e2524c553eecb519bf28c506e99cb64}\label{classmercury_1_1_group_sync_read_a9e2524c553eecb519bf28c506e99cb64}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!last\_result\_@{last\_result\_}}
+\index{last\_result\_@{last\_result\_}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{last\_result\_}{last\_result\_}}
+{\footnotesize\ttfamily bool mercury\+::\+Group\+Sync\+Read\+::last\+\_\+result\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file group\+\_\+sync\+\_\+read.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_read_aaba54ad05876843947351c03b2f8ab96}\label{classmercury_1_1_group_sync_read_aaba54ad05876843947351c03b2f8ab96}} 
+\index{mercury::GroupSyncRead@{mercury::GroupSyncRead}!start\_address\_@{start\_address\_}}
+\index{start\_address\_@{start\_address\_}!mercury::GroupSyncRead@{mercury::GroupSyncRead}}
+\doxysubsubsection{\texorpdfstring{start\_address\_}{start\_address\_}}
+{\footnotesize\ttfamily uint16\+\_\+t mercury\+::\+Group\+Sync\+Read\+::start\+\_\+address\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file group\+\_\+sync\+\_\+read.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c++/include/mercury\+\_\+sdk/\mbox{\hyperlink{group__sync__read_8h}{group\+\_\+sync\+\_\+read.\+h}}\item 
+c++/src/mercury\+\_\+sdk/\mbox{\hyperlink{group__sync__read_8cpp}{group\+\_\+sync\+\_\+read.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\hypertarget{sync__read__write_8cpp}{}\doxysection{c++/example/sync\+\_\+read\+\_\+write/sync\+\_\+read\+\_\+write.cpp File Reference}
+\label{sync__read__write_8cpp}\index{c++/example/sync\_read\_write/sync\_read\_write.cpp@{c++/example/sync\_read\_write/sync\_read\_write.cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../../include/mercury\+\_\+sdk/mercury\+\_\+sdk.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_ac9237eb7c97644472696ffa2289cd466}{ADDR\+\_\+\+MCY\+\_\+\+TORQUE\+\_\+\+ENABLE}}~0x30
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_ad0b12bf73dba2f524444a9d586e5f031}{ADDR\+\_\+\+MCY\+\_\+\+GOAL\+\_\+\+POSITION}}~0x4e
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_ae25af635ed9a9648a008c6b1dc307f4f}{ADDR\+\_\+\+MCY\+\_\+\+PRESENT\+\_\+\+POSITION}}~0x5a
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a7045506c4bfe0a99b22a42bb4e534b70}{LEN\+\_\+\+MCY\+\_\+\+GOAL\+\_\+\+POSITION}}~4
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_aaf53b3c924c41fe1777c39dde65b8833}{LEN\+\_\+\+MCY\+\_\+\+PRESENT\+\_\+\+POSITION}}~4
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}{BAUDRATE}}~1000000
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_abca33c097566d788d5163e433fc84150}{DEVICENAME}}~\char`\"{}/dev/tty\+ACM1\char`\"{}
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a8db41fdd2468c5664c70b17a82cf339f}{TORQUE\+\_\+\+ENABLE}}~1
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_afee6f2063609cb3bdc9402823f88f18d}{TORQUE\+\_\+\+DISABLE}}~0
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_aa9327ba9c7b7540ce2abcd6a3cac1da9}{MCY\+\_\+\+MINIMUM\+\_\+\+POSITION\+\_\+\+VALUE}}~-\/2000
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a0e952aebfe58992664bbee19c624df15}{MCY\+\_\+\+MAXIMUM\+\_\+\+POSITION\+\_\+\+VALUE}}~2000
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a1fbf0823cc970b2a657b0b3bbf7afb48}{MCY\+\_\+\+MOVING\+\_\+\+STATUS\+\_\+\+THRESHOLD}}~20
+\item 
+\#define \mbox{\hyperlink{sync__read__write_8cpp_a6e88c2a4c1660829989805b441c6f267}{ESC\+\_\+\+ASCII\+\_\+\+VALUE}}~0x1b
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{sync__read__write_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}{getch}} ()
+\item 
+int \mbox{\hyperlink{sync__read__write_8cpp_a97e9b1fe8d4c010474637a654aad6566}{kbhit}} (void)
+\item 
+int \mbox{\hyperlink{sync__read__write_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sync__read__write_8cpp_ad0b12bf73dba2f524444a9d586e5f031}\label{sync__read__write_8cpp_ad0b12bf73dba2f524444a9d586e5f031}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!ADDR\_MCY\_GOAL\_POSITION@{ADDR\_MCY\_GOAL\_POSITION}}
+\index{ADDR\_MCY\_GOAL\_POSITION@{ADDR\_MCY\_GOAL\_POSITION}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_MCY\_GOAL\_POSITION}{ADDR\_MCY\_GOAL\_POSITION}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+MCY\+\_\+\+GOAL\+\_\+\+POSITION~0x4e}
+
+
+
+Definition at line 47 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_ae25af635ed9a9648a008c6b1dc307f4f}\label{sync__read__write_8cpp_ae25af635ed9a9648a008c6b1dc307f4f}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!ADDR\_MCY\_PRESENT\_POSITION@{ADDR\_MCY\_PRESENT\_POSITION}}
+\index{ADDR\_MCY\_PRESENT\_POSITION@{ADDR\_MCY\_PRESENT\_POSITION}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_MCY\_PRESENT\_POSITION}{ADDR\_MCY\_PRESENT\_POSITION}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+MCY\+\_\+\+PRESENT\+\_\+\+POSITION~0x5a}
+
+
+
+Definition at line 48 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_ac9237eb7c97644472696ffa2289cd466}\label{sync__read__write_8cpp_ac9237eb7c97644472696ffa2289cd466}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!ADDR\_MCY\_TORQUE\_ENABLE@{ADDR\_MCY\_TORQUE\_ENABLE}}
+\index{ADDR\_MCY\_TORQUE\_ENABLE@{ADDR\_MCY\_TORQUE\_ENABLE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_MCY\_TORQUE\_ENABLE}{ADDR\_MCY\_TORQUE\_ENABLE}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+MCY\+\_\+\+TORQUE\+\_\+\+ENABLE~0x30}
+
+
+
+Definition at line 46 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}\label{sync__read__write_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!BAUDRATE@{BAUDRATE}}
+\index{BAUDRATE@{BAUDRATE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{BAUDRATE}{BAUDRATE}}
+{\footnotesize\ttfamily \#define BAUDRATE~1000000}
+
+
+
+Definition at line 55 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_abca33c097566d788d5163e433fc84150}\label{sync__read__write_8cpp_abca33c097566d788d5163e433fc84150}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!DEVICENAME@{DEVICENAME}}
+\index{DEVICENAME@{DEVICENAME}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{DEVICENAME}{DEVICENAME}}
+{\footnotesize\ttfamily \#define DEVICENAME~\char`\"{}/dev/tty\+ACM1\char`\"{}}
+
+
+
+Definition at line 56 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a6e88c2a4c1660829989805b441c6f267}\label{sync__read__write_8cpp_a6e88c2a4c1660829989805b441c6f267}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!ESC\_ASCII\_VALUE@{ESC\_ASCII\_VALUE}}
+\index{ESC\_ASCII\_VALUE@{ESC\_ASCII\_VALUE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{ESC\_ASCII\_VALUE}{ESC\_ASCII\_VALUE}}
+{\footnotesize\ttfamily \#define ESC\+\_\+\+ASCII\+\_\+\+VALUE~0x1b}
+
+
+
+Definition at line 65 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a7045506c4bfe0a99b22a42bb4e534b70}\label{sync__read__write_8cpp_a7045506c4bfe0a99b22a42bb4e534b70}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!LEN\_MCY\_GOAL\_POSITION@{LEN\_MCY\_GOAL\_POSITION}}
+\index{LEN\_MCY\_GOAL\_POSITION@{LEN\_MCY\_GOAL\_POSITION}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{LEN\_MCY\_GOAL\_POSITION}{LEN\_MCY\_GOAL\_POSITION}}
+{\footnotesize\ttfamily \#define LEN\+\_\+\+MCY\+\_\+\+GOAL\+\_\+\+POSITION~4}
+
+
+
+Definition at line 51 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_aaf53b3c924c41fe1777c39dde65b8833}\label{sync__read__write_8cpp_aaf53b3c924c41fe1777c39dde65b8833}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!LEN\_MCY\_PRESENT\_POSITION@{LEN\_MCY\_PRESENT\_POSITION}}
+\index{LEN\_MCY\_PRESENT\_POSITION@{LEN\_MCY\_PRESENT\_POSITION}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{LEN\_MCY\_PRESENT\_POSITION}{LEN\_MCY\_PRESENT\_POSITION}}
+{\footnotesize\ttfamily \#define LEN\+\_\+\+MCY\+\_\+\+PRESENT\+\_\+\+POSITION~4}
+
+
+
+Definition at line 52 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a0e952aebfe58992664bbee19c624df15}\label{sync__read__write_8cpp_a0e952aebfe58992664bbee19c624df15}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!MCY\_MAXIMUM\_POSITION\_VALUE@{MCY\_MAXIMUM\_POSITION\_VALUE}}
+\index{MCY\_MAXIMUM\_POSITION\_VALUE@{MCY\_MAXIMUM\_POSITION\_VALUE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{MCY\_MAXIMUM\_POSITION\_VALUE}{MCY\_MAXIMUM\_POSITION\_VALUE}}
+{\footnotesize\ttfamily \#define MCY\+\_\+\+MAXIMUM\+\_\+\+POSITION\+\_\+\+VALUE~2000}
+
+
+
+Definition at line 62 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_aa9327ba9c7b7540ce2abcd6a3cac1da9}\label{sync__read__write_8cpp_aa9327ba9c7b7540ce2abcd6a3cac1da9}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!MCY\_MINIMUM\_POSITION\_VALUE@{MCY\_MINIMUM\_POSITION\_VALUE}}
+\index{MCY\_MINIMUM\_POSITION\_VALUE@{MCY\_MINIMUM\_POSITION\_VALUE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{MCY\_MINIMUM\_POSITION\_VALUE}{MCY\_MINIMUM\_POSITION\_VALUE}}
+{\footnotesize\ttfamily \#define MCY\+\_\+\+MINIMUM\+\_\+\+POSITION\+\_\+\+VALUE~-\/2000}
+
+
+
+Definition at line 61 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a1fbf0823cc970b2a657b0b3bbf7afb48}\label{sync__read__write_8cpp_a1fbf0823cc970b2a657b0b3bbf7afb48}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!MCY\_MOVING\_STATUS\_THRESHOLD@{MCY\_MOVING\_STATUS\_THRESHOLD}}
+\index{MCY\_MOVING\_STATUS\_THRESHOLD@{MCY\_MOVING\_STATUS\_THRESHOLD}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{MCY\_MOVING\_STATUS\_THRESHOLD}{MCY\_MOVING\_STATUS\_THRESHOLD}}
+{\footnotesize\ttfamily \#define MCY\+\_\+\+MOVING\+\_\+\+STATUS\+\_\+\+THRESHOLD~20}
+
+
+
+Definition at line 63 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_afee6f2063609cb3bdc9402823f88f18d}\label{sync__read__write_8cpp_afee6f2063609cb3bdc9402823f88f18d}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!TORQUE\_DISABLE@{TORQUE\_DISABLE}}
+\index{TORQUE\_DISABLE@{TORQUE\_DISABLE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{TORQUE\_DISABLE}{TORQUE\_DISABLE}}
+{\footnotesize\ttfamily \#define TORQUE\+\_\+\+DISABLE~0}
+
+
+
+Definition at line 60 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a8db41fdd2468c5664c70b17a82cf339f}\label{sync__read__write_8cpp_a8db41fdd2468c5664c70b17a82cf339f}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!TORQUE\_ENABLE@{TORQUE\_ENABLE}}
+\index{TORQUE\_ENABLE@{TORQUE\_ENABLE}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{TORQUE\_ENABLE}{TORQUE\_ENABLE}}
+{\footnotesize\ttfamily \#define TORQUE\+\_\+\+ENABLE~1}
+
+
+
+Definition at line 59 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sync__read__write_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}\label{sync__read__write_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!getch@{getch}}
+\index{getch@{getch}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{getch()}{getch()}}
+{\footnotesize\ttfamily int getch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_a97e9b1fe8d4c010474637a654aad6566}\label{sync__read__write_8cpp_a97e9b1fe8d4c010474637a654aad6566}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!kbhit@{kbhit}}
+\index{kbhit@{kbhit}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{kbhit()}{kbhit()}}
+{\footnotesize\ttfamily int kbhit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file sync\+\_\+read\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{sync__read__write_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{sync__read__write_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{sync\_read\_write.cpp@{sync\_read\_write.cpp}!main@{main}}
+\index{main@{main}!sync\_read\_write.cpp@{sync\_read\_write.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file sync\+\_\+read\+\_\+write.\+cpp.
+

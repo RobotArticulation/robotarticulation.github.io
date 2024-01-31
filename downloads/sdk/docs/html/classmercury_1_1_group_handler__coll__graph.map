@@ -1,0 +1,5 @@
+<map id="mercury::GroupHandler" name="mercury::GroupHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="95,95,268,121"/>
+<area shape="rect" id="node2" href="$classmercury_1_1_port_handler.html" title="The class for port control that inherits PortHandlerLinux, PortHandlerWindows, PortHandlerMac,..." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node3" href="$classmercury_1_1_packet_handler.html" title="The class that inherits Protocol1PacketHandler class or Protocol2PacketHandler class." alt="" coords="189,5,365,32"/>
+</map>

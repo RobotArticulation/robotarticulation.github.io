@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factory_5freset_2ecpp_152',['factory_reset.cpp',['../factory__reset_8cpp.html',1,'']]]
+  ['clear_5fmulti_5fturn_2ecpp_210',['clear_multi_turn.cpp',['../clear__multi__turn_8cpp.html',1,'']]]
 ];

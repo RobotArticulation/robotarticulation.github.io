@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fusing_5f_228',['is_using_',['../classmercury_1_1_port_handler.html#acd0f51362140dd0773432d6cb48653ab',1,'mercury::PortHandler']]]
+  ['error_5flist_5f_315',['error_list_',['../classmercury_1_1_group_sync_read.html#a13e48ea2f00d22164be5e641016e1f7d',1,'mercury::GroupSyncRead']]]
 ];

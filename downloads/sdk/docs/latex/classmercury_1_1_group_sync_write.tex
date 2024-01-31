@@ -1,0 +1,203 @@
+\hypertarget{classmercury_1_1_group_sync_write}{}\doxysection{mercury\+::Group\+Sync\+Write Class Reference}
+\label{classmercury_1_1_group_sync_write}\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+
+
+The class for writing multiple Dynamixel data from same address with same length at once.  
+
+
+
+
+{\ttfamily \#include $<$group\+\_\+sync\+\_\+write.\+h$>$}
+
+Inheritance diagram for mercury\+::Group\+Sync\+Write\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmercury_1_1_group_sync_write}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmercury_1_1_group_sync_write_a5c8c32d6fca4afad57d23ae16f1201aa}{Group\+Sync\+Write}} (\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$port, \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$ph, uint16\+\_\+t start\+\_\+address, uint16\+\_\+t data\+\_\+length)
+\begin{DoxyCompactList}\small\item\em The function that Initializes instance for Sync Write. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmercury_1_1_group_sync_write_af1f453f4d1667a67021f80fd516a83e6}{$\sim$\+Group\+Sync\+Write}} ()
+\begin{DoxyCompactList}\small\item\em The function that calls clear\+Param function to clear the parameter list for Sync Write. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_write_afc0cc038455a8129208104600561ac05}{add\+Param}} (uint8\+\_\+t id, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em The function that adds id, start\+\_\+address, data\+\_\+length to the Sync Write list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmercury_1_1_group_sync_write_a55f6592249c9402df0e6a96e056ff747}{remove\+Param}} (uint8\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em The function that removes id from the Sync Write list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_sync_write_a033112625da0a2b8ccf6f9be98e8ec00}{change\+Param}} (uint8\+\_\+t id, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em The function that changes the data for write in id -\/$>$ start\+\_\+address -\/$>$ data\+\_\+length to the Sync Write list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmercury_1_1_group_sync_write_a5344216723fca1a01cbe946784ab9e0f}{clear\+Param}} ()
+\begin{DoxyCompactList}\small\item\em The function that clears the Sync Write list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmercury_1_1_group_sync_write_ae0106bb5cf57c728c809ea1f696727be}{tx\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em The function that transmits the Sync Write instruction packet which might be constructed by \mbox{\hyperlink{classmercury_1_1_group_sync_write_afc0cc038455a8129208104600561ac05}{Group\+Sync\+Write\+::add\+Param}} function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class for writing multiple Dynamixel data from same address with same length at once. 
+
+Definition at line 36 of file group\+\_\+sync\+\_\+write.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_a5c8c32d6fca4afad57d23ae16f1201aa}\label{classmercury_1_1_group_sync_write_a5c8c32d6fca4afad57d23ae16f1201aa}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!GroupSyncWrite@{GroupSyncWrite}}
+\index{GroupSyncWrite@{GroupSyncWrite}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{GroupSyncWrite()}{GroupSyncWrite()}}
+{\footnotesize\ttfamily Group\+Sync\+Write\+::\+Group\+Sync\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$}]{port,  }\item[{\mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$}]{ph,  }\item[{uint16\+\_\+t}]{start\+\_\+address,  }\item[{uint16\+\_\+t}]{data\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+The function that Initializes instance for Sync Write. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} instance \\
+\hline
+{\em ph} & \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} instance \\
+\hline
+{\em start\+\_\+address} & Address of the data for write \\
+\hline
+{\em data\+\_\+length} & Length of the data for write \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_af1f453f4d1667a67021f80fd516a83e6}\label{classmercury_1_1_group_sync_write_af1f453f4d1667a67021f80fd516a83e6}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!````~GroupSyncWrite@{$\sim$GroupSyncWrite}}
+\index{````~GroupSyncWrite@{$\sim$GroupSyncWrite}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{$\sim$GroupSyncWrite()}{~GroupSyncWrite()}}
+{\footnotesize\ttfamily mercury\+::\+Group\+Sync\+Write\+::$\sim$\+Group\+Sync\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The function that calls clear\+Param function to clear the parameter list for Sync Write. 
+
+
+
+Definition at line 57 of file group\+\_\+sync\+\_\+write.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_afc0cc038455a8129208104600561ac05}\label{classmercury_1_1_group_sync_write_afc0cc038455a8129208104600561ac05}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!addParam@{addParam}}
+\index{addParam@{addParam}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{addParam()}{addParam()}}
+{\footnotesize\ttfamily bool Group\+Sync\+Write\+::add\+Param (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+The function that adds id, start\+\_\+address, data\+\_\+length to the Sync Write list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+{\em data} & Data for write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+
+when the ID exists already in the list 
+
+or true 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_a033112625da0a2b8ccf6f9be98e8ec00}\label{classmercury_1_1_group_sync_write_a033112625da0a2b8ccf6f9be98e8ec00}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!changeParam@{changeParam}}
+\index{changeParam@{changeParam}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{changeParam()}{changeParam()}}
+{\footnotesize\ttfamily bool Group\+Sync\+Write\+::change\+Param (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+The function that changes the data for write in id -\/$>$ start\+\_\+address -\/$>$ data\+\_\+length to the Sync Write list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+{\em data} & for replacement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+
+when the ID doesn\textquotesingle{}t exist in the list 
+
+or true 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_a5344216723fca1a01cbe946784ab9e0f}\label{classmercury_1_1_group_sync_write_a5344216723fca1a01cbe946784ab9e0f}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!clearParam@{clearParam}}
+\index{clearParam@{clearParam}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{clearParam()}{clearParam()}}
+{\footnotesize\ttfamily void Group\+Sync\+Write\+::clear\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that clears the Sync Write list. 
+
+
+
+Definition at line 107 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_a55f6592249c9402df0e6a96e056ff747}\label{classmercury_1_1_group_sync_write_a55f6592249c9402df0e6a96e056ff747}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!removeParam@{removeParam}}
+\index{removeParam@{removeParam}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{removeParam()}{removeParam()}}
+{\footnotesize\ttfamily void Group\+Sync\+Write\+::remove\+Param (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+The function that removes id from the Sync Write list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Dynamixel ID \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 79 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+\mbox{\Hypertarget{classmercury_1_1_group_sync_write_ae0106bb5cf57c728c809ea1f696727be}\label{classmercury_1_1_group_sync_write_ae0106bb5cf57c728c809ea1f696727be}} 
+\index{mercury::GroupSyncWrite@{mercury::GroupSyncWrite}!txPacket@{txPacket}}
+\index{txPacket@{txPacket}!mercury::GroupSyncWrite@{mercury::GroupSyncWrite}}
+\doxysubsubsection{\texorpdfstring{txPacket()}{txPacket()}}
+{\footnotesize\ttfamily int Group\+Sync\+Write\+::tx\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function that transmits the Sync Write instruction packet which might be constructed by \mbox{\hyperlink{classmercury_1_1_group_sync_write_afc0cc038455a8129208104600561ac05}{Group\+Sync\+Write\+::add\+Param}} function. 
+
+\begin{DoxyReturn}{Returns}
+COMM\+\_\+\+NOT\+\_\+\+AVAILABLE 
+
+when the list for Sync Write is empty 
+
+or the other communication results which come from \mbox{\hyperlink{classmercury_1_1_packet_handler_aa4c16ce358c78638f49f6dc1b5b141bd}{Packet\+Handler\+::sync\+Write\+Tx\+Only}} 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file group\+\_\+sync\+\_\+write.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c++/include/mercury\+\_\+sdk/\mbox{\hyperlink{group__sync__write_8h}{group\+\_\+sync\+\_\+write.\+h}}\item 
+c++/src/mercury\+\_\+sdk/\mbox{\hyperlink{group__sync__write_8cpp}{group\+\_\+sync\+\_\+write.\+cpp}}\end{DoxyCompactItemize}

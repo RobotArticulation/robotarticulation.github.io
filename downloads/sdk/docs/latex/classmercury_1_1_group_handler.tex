@@ -1,0 +1,148 @@
+\hypertarget{classmercury_1_1_group_handler}{}\doxysection{mercury\+::Group\+Handler Class Reference}
+\label{classmercury_1_1_group_handler}\index{mercury::GroupHandler@{mercury::GroupHandler}}
+
+
+{\ttfamily \#include $<$group\+\_\+handler.\+h$>$}
+
+Inheritance diagram for mercury\+::Group\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmercury_1_1_group_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmercury_1_1_group_handler_a3ad36b25111d008a55584c95fccfd9da}{Group\+Handler}} (\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$port, \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$ph)
+\item 
+\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$ \mbox{\hyperlink{classmercury_1_1_group_handler_afb53ede0c722364d4a83385f0c24b244}{get\+Port\+Handler}} ()
+\item 
+\mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$ \mbox{\hyperlink{classmercury_1_1_group_handler_a7458a1231bcaaab3edabaca9789df85e}{get\+Packet\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$ \mbox{\hyperlink{classmercury_1_1_group_handler_ad62a7a9b3f52eedd95195a2f9a35e8b8}{port\+\_\+}}
+\item 
+\mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$ \mbox{\hyperlink{classmercury_1_1_group_handler_a1b2af91aa8670fab6a92686fd7af4cb4}{ph\+\_\+}}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classmercury_1_1_group_handler_a2e29448513443198d939ba68e0c8a8bc}{id\+\_\+list\+\_\+}}
+\item 
+std\+::map$<$ uint8\+\_\+t, uint8\+\_\+t $\ast$ $>$ \mbox{\hyperlink{classmercury_1_1_group_handler_a33e984c348e8a3c9cc9afe1d6fcc3d57}{data\+\_\+list\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classmercury_1_1_group_handler_a91c1263570eb27277b07f417328c8d39}{is\+\_\+param\+\_\+changed\+\_\+}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classmercury_1_1_group_handler_a10c11331896c271eebf500445833d2e6}{param\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 34 of file group\+\_\+handler.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a3ad36b25111d008a55584c95fccfd9da}\label{classmercury_1_1_group_handler_a3ad36b25111d008a55584c95fccfd9da}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!GroupHandler@{GroupHandler}}
+\index{GroupHandler@{GroupHandler}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{GroupHandler()}{GroupHandler()}}
+{\footnotesize\ttfamily Group\+Handler\+::\+Group\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}} $\ast$}]{port,  }\item[{\mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}} $\ast$}]{ph }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file group\+\_\+handler.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a7458a1231bcaaab3edabaca9789df85e}\label{classmercury_1_1_group_handler_a7458a1231bcaaab3edabaca9789df85e}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!getPacketHandler@{getPacketHandler}}
+\index{getPacketHandler@{getPacketHandler}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{getPacketHandler()}{getPacketHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}}$\ast$ mercury\+::\+Group\+Handler\+::get\+Packet\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_afb53ede0c722364d4a83385f0c24b244}\label{classmercury_1_1_group_handler_afb53ede0c722364d4a83385f0c24b244}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!getPortHandler@{getPortHandler}}
+\index{getPortHandler@{getPortHandler}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{getPortHandler()}{getPortHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}}$\ast$ mercury\+::\+Group\+Handler\+::get\+Port\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file group\+\_\+handler.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a33e984c348e8a3c9cc9afe1d6fcc3d57}\label{classmercury_1_1_group_handler_a33e984c348e8a3c9cc9afe1d6fcc3d57}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!data\_list\_@{data\_list\_}}
+\index{data\_list\_@{data\_list\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{data\_list\_}{data\_list\_}}
+{\footnotesize\ttfamily std\+::map$<$uint8\+\_\+t, uint8\+\_\+t $\ast$$>$ mercury\+::\+Group\+Handler\+::data\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 47 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a2e29448513443198d939ba68e0c8a8bc}\label{classmercury_1_1_group_handler_a2e29448513443198d939ba68e0c8a8bc}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!id\_list\_@{id\_list\_}}
+\index{id\_list\_@{id\_list\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{id\_list\_}{id\_list\_}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ mercury\+::\+Group\+Handler\+::id\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 46 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a91c1263570eb27277b07f417328c8d39}\label{classmercury_1_1_group_handler_a91c1263570eb27277b07f417328c8d39}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!is\_param\_changed\_@{is\_param\_changed\_}}
+\index{is\_param\_changed\_@{is\_param\_changed\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{is\_param\_changed\_}{is\_param\_changed\_}}
+{\footnotesize\ttfamily bool mercury\+::\+Group\+Handler\+::is\+\_\+param\+\_\+changed\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 49 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a10c11331896c271eebf500445833d2e6}\label{classmercury_1_1_group_handler_a10c11331896c271eebf500445833d2e6}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!param\_@{param\_}}
+\index{param\_@{param\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{param\_}{param\_}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ mercury\+::\+Group\+Handler\+::param\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_a1b2af91aa8670fab6a92686fd7af4cb4}\label{classmercury_1_1_group_handler_a1b2af91aa8670fab6a92686fd7af4cb4}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!ph\_@{ph\_}}
+\index{ph\_@{ph\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{ph\_}{ph\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmercury_1_1_packet_handler}{Packet\+Handler}}$\ast$ mercury\+::\+Group\+Handler\+::ph\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file group\+\_\+handler.\+h.
+
+\mbox{\Hypertarget{classmercury_1_1_group_handler_ad62a7a9b3f52eedd95195a2f9a35e8b8}\label{classmercury_1_1_group_handler_ad62a7a9b3f52eedd95195a2f9a35e8b8}} 
+\index{mercury::GroupHandler@{mercury::GroupHandler}!port\_@{port\_}}
+\index{port\_@{port\_}!mercury::GroupHandler@{mercury::GroupHandler}}
+\doxysubsubsection{\texorpdfstring{port\_}{port\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmercury_1_1_port_handler}{Port\+Handler}}$\ast$ mercury\+::\+Group\+Handler\+::port\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file group\+\_\+handler.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c++/include/mercury\+\_\+sdk/\mbox{\hyperlink{group__handler_8h}{group\+\_\+handler.\+h}}\item 
+c++/src/mercury\+\_\+sdk/\mbox{\hyperlink{group__handler_8cpp}{group\+\_\+handler.\+cpp}}\end{DoxyCompactItemize}

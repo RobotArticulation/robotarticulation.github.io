@@ -1,0 +1,245 @@
+\hypertarget{clear__multi__turn_8cpp}{}\doxysection{c++/example/clear\+\_\+multi\+\_\+turn/clear\+\_\+multi\+\_\+turn.cpp File Reference}
+\label{clear__multi__turn_8cpp}\index{c++/example/clear\_multi\_turn/clear\_multi\_turn.cpp@{c++/example/clear\_multi\_turn/clear\_multi\_turn.cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mercury\+\_\+sdk.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a4fd7bfdb3915aed84a6b5f9e4b8fd8cc}{ADDR\+\_\+\+OPERATING\+\_\+\+MODE}}~0x06
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_aef64d6079bb9a1830c1e2cc268b2d70a}{ADDR\+\_\+\+TORQUE\+\_\+\+ENABLE}}~0x30
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a80a2a110c1e2e7bdb3801e202f7a19f4}{ADDR\+\_\+\+GOAL\+\_\+\+POSITION}}~0x4e
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a24f4c4378a16111c88ef8959c8acd870}{ADDR\+\_\+\+PRESENT\+\_\+\+POSITION}}~0x5a
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a277f7abca2044f354abe265252cb9252}{PROTOCOL\+\_\+\+VERSION}}~2.\+0
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_ab3bbb33ca0e2b6d2e429ee8b52cb20a4}{MCY\+\_\+\+ID}}~1
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}{BAUDRATE}}~1000000
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_abca33c097566d788d5163e433fc84150}{DEVICENAME}}~\char`\"{}/dev/tty\+ACM1\char`\"{}
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a8db41fdd2468c5664c70b17a82cf339f}{TORQUE\+\_\+\+ENABLE}}~1
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_afee6f2063609cb3bdc9402823f88f18d}{TORQUE\+\_\+\+DISABLE}}~0
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_af6511286c50cc1900b009b4fb06faf5b}{MAX\+\_\+\+POSITION\+\_\+\+VALUE}}~-\/1
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a7e1b6a6a6067c9d807a5052503b633d4}{DXL\+\_\+\+MOVING\+\_\+\+STATUS\+\_\+\+THRESHOLD}}~20
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a1dbb6cd983c9ce0309d0c6cfd49adead}{EXT\+\_\+\+POSITION\+\_\+\+CONTROL\+\_\+\+MODE}}~3
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a6e88c2a4c1660829989805b441c6f267}{ESC\+\_\+\+ASCII\+\_\+\+VALUE}}~0x1b
+\item 
+\#define \mbox{\hyperlink{clear__multi__turn_8cpp_a84a2942d92e7378fc96df3f5ff91eebf}{SPACE\+\_\+\+ASCII\+\_\+\+VALUE}}~0x20
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{clear__multi__turn_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}{getch}} ()
+\item 
+int \mbox{\hyperlink{clear__multi__turn_8cpp_a97e9b1fe8d4c010474637a654aad6566}{kbhit}} (void)
+\item 
+void \mbox{\hyperlink{clear__multi__turn_8cpp_a253021d5795fb03a08e166b1cd914bf1}{msec\+Sleep}} (int wait\+Time)
+\item 
+int \mbox{\hyperlink{clear__multi__turn_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a80a2a110c1e2e7bdb3801e202f7a19f4}\label{clear__multi__turn_8cpp_a80a2a110c1e2e7bdb3801e202f7a19f4}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!ADDR\_GOAL\_POSITION@{ADDR\_GOAL\_POSITION}}
+\index{ADDR\_GOAL\_POSITION@{ADDR\_GOAL\_POSITION}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_GOAL\_POSITION}{ADDR\_GOAL\_POSITION}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+GOAL\+\_\+\+POSITION~0x4e}
+
+
+
+Definition at line 46 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a4fd7bfdb3915aed84a6b5f9e4b8fd8cc}\label{clear__multi__turn_8cpp_a4fd7bfdb3915aed84a6b5f9e4b8fd8cc}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!ADDR\_OPERATING\_MODE@{ADDR\_OPERATING\_MODE}}
+\index{ADDR\_OPERATING\_MODE@{ADDR\_OPERATING\_MODE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_OPERATING\_MODE}{ADDR\_OPERATING\_MODE}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+OPERATING\+\_\+\+MODE~0x06}
+
+
+
+Definition at line 44 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a24f4c4378a16111c88ef8959c8acd870}\label{clear__multi__turn_8cpp_a24f4c4378a16111c88ef8959c8acd870}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!ADDR\_PRESENT\_POSITION@{ADDR\_PRESENT\_POSITION}}
+\index{ADDR\_PRESENT\_POSITION@{ADDR\_PRESENT\_POSITION}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_PRESENT\_POSITION}{ADDR\_PRESENT\_POSITION}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+PRESENT\+\_\+\+POSITION~0x5a}
+
+
+
+Definition at line 47 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_aef64d6079bb9a1830c1e2cc268b2d70a}\label{clear__multi__turn_8cpp_aef64d6079bb9a1830c1e2cc268b2d70a}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!ADDR\_TORQUE\_ENABLE@{ADDR\_TORQUE\_ENABLE}}
+\index{ADDR\_TORQUE\_ENABLE@{ADDR\_TORQUE\_ENABLE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{ADDR\_TORQUE\_ENABLE}{ADDR\_TORQUE\_ENABLE}}
+{\footnotesize\ttfamily \#define ADDR\+\_\+\+TORQUE\+\_\+\+ENABLE~0x30}
+
+
+
+Definition at line 45 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}\label{clear__multi__turn_8cpp_a734bbab06e1a9fd2e5522db0221ff6e3}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!BAUDRATE@{BAUDRATE}}
+\index{BAUDRATE@{BAUDRATE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{BAUDRATE}{BAUDRATE}}
+{\footnotesize\ttfamily \#define BAUDRATE~1000000}
+
+
+
+Definition at line 54 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_abca33c097566d788d5163e433fc84150}\label{clear__multi__turn_8cpp_abca33c097566d788d5163e433fc84150}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!DEVICENAME@{DEVICENAME}}
+\index{DEVICENAME@{DEVICENAME}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{DEVICENAME}{DEVICENAME}}
+{\footnotesize\ttfamily \#define DEVICENAME~\char`\"{}/dev/tty\+ACM1\char`\"{}}
+
+
+
+Definition at line 55 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a7e1b6a6a6067c9d807a5052503b633d4}\label{clear__multi__turn_8cpp_a7e1b6a6a6067c9d807a5052503b633d4}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!DXL\_MOVING\_STATUS\_THRESHOLD@{DXL\_MOVING\_STATUS\_THRESHOLD}}
+\index{DXL\_MOVING\_STATUS\_THRESHOLD@{DXL\_MOVING\_STATUS\_THRESHOLD}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{DXL\_MOVING\_STATUS\_THRESHOLD}{DXL\_MOVING\_STATUS\_THRESHOLD}}
+{\footnotesize\ttfamily \#define DXL\+\_\+\+MOVING\+\_\+\+STATUS\+\_\+\+THRESHOLD~20}
+
+
+
+Definition at line 61 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a6e88c2a4c1660829989805b441c6f267}\label{clear__multi__turn_8cpp_a6e88c2a4c1660829989805b441c6f267}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!ESC\_ASCII\_VALUE@{ESC\_ASCII\_VALUE}}
+\index{ESC\_ASCII\_VALUE@{ESC\_ASCII\_VALUE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{ESC\_ASCII\_VALUE}{ESC\_ASCII\_VALUE}}
+{\footnotesize\ttfamily \#define ESC\+\_\+\+ASCII\+\_\+\+VALUE~0x1b}
+
+
+
+Definition at line 64 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a1dbb6cd983c9ce0309d0c6cfd49adead}\label{clear__multi__turn_8cpp_a1dbb6cd983c9ce0309d0c6cfd49adead}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!EXT\_POSITION\_CONTROL\_MODE@{EXT\_POSITION\_CONTROL\_MODE}}
+\index{EXT\_POSITION\_CONTROL\_MODE@{EXT\_POSITION\_CONTROL\_MODE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{EXT\_POSITION\_CONTROL\_MODE}{EXT\_POSITION\_CONTROL\_MODE}}
+{\footnotesize\ttfamily \#define EXT\+\_\+\+POSITION\+\_\+\+CONTROL\+\_\+\+MODE~3}
+
+
+
+Definition at line 62 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_af6511286c50cc1900b009b4fb06faf5b}\label{clear__multi__turn_8cpp_af6511286c50cc1900b009b4fb06faf5b}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!MAX\_POSITION\_VALUE@{MAX\_POSITION\_VALUE}}
+\index{MAX\_POSITION\_VALUE@{MAX\_POSITION\_VALUE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_POSITION\_VALUE}{MAX\_POSITION\_VALUE}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+POSITION\+\_\+\+VALUE~-\/1}
+
+
+
+Definition at line 60 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_ab3bbb33ca0e2b6d2e429ee8b52cb20a4}\label{clear__multi__turn_8cpp_ab3bbb33ca0e2b6d2e429ee8b52cb20a4}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!MCY\_ID@{MCY\_ID}}
+\index{MCY\_ID@{MCY\_ID}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{MCY\_ID}{MCY\_ID}}
+{\footnotesize\ttfamily \#define MCY\+\_\+\+ID~1}
+
+
+
+Definition at line 53 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a277f7abca2044f354abe265252cb9252}\label{clear__multi__turn_8cpp_a277f7abca2044f354abe265252cb9252}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!PROTOCOL\_VERSION@{PROTOCOL\_VERSION}}
+\index{PROTOCOL\_VERSION@{PROTOCOL\_VERSION}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{PROTOCOL\_VERSION}{PROTOCOL\_VERSION}}
+{\footnotesize\ttfamily \#define PROTOCOL\+\_\+\+VERSION~2.\+0}
+
+
+
+Definition at line 50 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a84a2942d92e7378fc96df3f5ff91eebf}\label{clear__multi__turn_8cpp_a84a2942d92e7378fc96df3f5ff91eebf}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!SPACE\_ASCII\_VALUE@{SPACE\_ASCII\_VALUE}}
+\index{SPACE\_ASCII\_VALUE@{SPACE\_ASCII\_VALUE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{SPACE\_ASCII\_VALUE}{SPACE\_ASCII\_VALUE}}
+{\footnotesize\ttfamily \#define SPACE\+\_\+\+ASCII\+\_\+\+VALUE~0x20}
+
+
+
+Definition at line 65 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_afee6f2063609cb3bdc9402823f88f18d}\label{clear__multi__turn_8cpp_afee6f2063609cb3bdc9402823f88f18d}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!TORQUE\_DISABLE@{TORQUE\_DISABLE}}
+\index{TORQUE\_DISABLE@{TORQUE\_DISABLE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{TORQUE\_DISABLE}{TORQUE\_DISABLE}}
+{\footnotesize\ttfamily \#define TORQUE\+\_\+\+DISABLE~0}
+
+
+
+Definition at line 59 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a8db41fdd2468c5664c70b17a82cf339f}\label{clear__multi__turn_8cpp_a8db41fdd2468c5664c70b17a82cf339f}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!TORQUE\_ENABLE@{TORQUE\_ENABLE}}
+\index{TORQUE\_ENABLE@{TORQUE\_ENABLE}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{TORQUE\_ENABLE}{TORQUE\_ENABLE}}
+{\footnotesize\ttfamily \#define TORQUE\+\_\+\+ENABLE~1}
+
+
+
+Definition at line 58 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}\label{clear__multi__turn_8cpp_a160f6d2893bb6b89ab3ad5d863c20e3d}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!getch@{getch}}
+\index{getch@{getch}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{getch()}{getch()}}
+{\footnotesize\ttfamily int getch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a97e9b1fe8d4c010474637a654aad6566}\label{clear__multi__turn_8cpp_a97e9b1fe8d4c010474637a654aad6566}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!kbhit@{kbhit}}
+\index{kbhit@{kbhit}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{kbhit()}{kbhit()}}
+{\footnotesize\ttfamily int kbhit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{clear__multi__turn_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!main@{main}}
+\index{main@{main}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
+\mbox{\Hypertarget{clear__multi__turn_8cpp_a253021d5795fb03a08e166b1cd914bf1}\label{clear__multi__turn_8cpp_a253021d5795fb03a08e166b1cd914bf1}} 
+\index{clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}!msecSleep@{msecSleep}}
+\index{msecSleep@{msecSleep}!clear\_multi\_turn.cpp@{clear\_multi\_turn.cpp}}
+\doxysubsubsection{\texorpdfstring{msecSleep()}{msecSleep()}}
+{\footnotesize\ttfamily void msec\+Sleep (\begin{DoxyParamCaption}\item[{int}]{wait\+Time }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file clear\+\_\+multi\+\_\+turn.\+cpp.
+
